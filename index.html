@@ -25,7 +25,7 @@
 
 
   <title>Academic Project Page</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="static/images/Tsinghua_University_Logo.svg.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
 
@@ -52,28 +52,28 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">VisRL: Intention-Driven Visual Perception via Reinforced Reasoning</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Zhangquan Chen</a>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Xufang Luo</a><sup>*</sup>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Dongsheng Li</a>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="author-block">Tsinghua University, Microsoft Research Asia<br>CVPR2025 Workshop Spotlight</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Corresponding Author</small></span>
                   </div>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <a href="https://arxiv.org/pdf/2503.07523" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -82,20 +82,9 @@
                       </a>
                     </span>
 
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://github.com/zhangquanchen/VisRL" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -104,16 +93,6 @@
                   </a>
                 </span>
 
-                <!-- ArXiv abstract Link -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
             </div>
           </div>
         </div>
@@ -129,11 +108,11 @@
     <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
         <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
+        <source src="static/videos/pre-visrl-video.mp4"
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+        Video Presentation of VisRL.
       </h2>
     </div>
   </div>
@@ -148,7 +127,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Visual understanding is inherently intention-driven—humans selectively focus on different regions of a scene based on their goals. Recent advances in large multimodal models (LMMs) enable flexible expression of such intentions through natural language, allowing queries to guide visual reasoning processes. Frameworks like Visual Chain-of-Thought have demonstrated the benefit of incorporating explicit reasoning steps, where the model predicts a focus region before answering a query. However, existing approaches rely heavily on supervised training with <strong><span style="color:red; ">annotated intermediate bounding boxes</span></strong>, which severely limits scalability due to the combinatorial explosion of intention-region pairs. To overcome this limitation, we propose VisRL, <strong><span style="color:red;">the first framework that applies reinforcement learning (RL) to the problem of intention-driven visual perception</span></strong>. VisRL optimizes the entire visual reasoning process using only reward signals.  By treating intermediate focus selection as a <strong><span style="color:red; ">internal decision optimized through trial-and-error</span></strong>, our method eliminates the need for costly region annotations while aligning more closely with how humans learn to perceive the world. Extensive experiments across multiple benchmarks show that VisRL consistently outperforms strong baselines, demonstrating both its effectiveness and its strong generalization across different LMMs.
           </p>
         </div>
       </div>
@@ -165,30 +144,37 @@
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/pipeline.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          First image description.
+          The schematic illustration of our VisRL framework. VisRL enables intention-driven visual perception by leveraging RL to learn from task rewards without requiring annotations and external helps.
         </h2>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
+     <div class="item"  style="text-align: center;">
+      <!-- Your image here -->
+      <img src="static/images/data_gen.png" alt="MY ALT TEXT" style="width: 50%; height: auto; max-width: none;"/>
+      <h2 class="subtitle has-text-centered">
+        The schematic illustration of our data generation pipeline.
+      </h2>
+    </div>
      <div class="item">
       <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
+      <img src="static/images/rebuttal.png" alt="MY ALT TEXT" style="margin-top: 40px; padding-top: 20px;"/>
       <h2 class="subtitle has-text-centered">
-        Fourth image description.
+        Visualization of TextVQA (left) and OOD case (right).
+      </h2>
+    </div>
+       <div class="item"  style="text-align: center;">
+      <!-- Your image here -->
+      <img src="static/images/result.png" alt="MY ALT TEXT" style="width: 50%; height: auto; max-width: none;"/>
+      <h2 class="subtitle has-text-centered">
+        Performance on the different benchmarks. The amount of dense-labeled CoT data with bounding box annotations used is indicated in []. The best results from different LMMs are highlighted.
+      </h2>
+    </div>
+       <div class="item"  style="text-align: center;">
+      <!-- Your image here -->
+      <img src="static/images/chart.png" alt="MY ALT TEXT" style="width: 50%; height: auto; max-width: none;"/>
+      <h2 class="subtitle has-text-centered">
+        Performance of our VisRL over multiple iterations, attributing to the intertwined improvement of data quality and model capability during the iterative process.
       </h2>
     </div>
   </div>
@@ -200,17 +186,15 @@
 
 
 
-<!-- Youtube video -->
+<!-- 
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
-      <!-- Paper video. -->
       <h2 class="title is-3">Video Presentation</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           
           <div class="publication-video">
-            <!-- Youtube embed code here -->
             <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
@@ -218,10 +202,10 @@
     </div>
   </div>
 </section>
-<!-- End youtube video -->
+-->
 
 
-<!-- Video carousel -->
+<!--
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
@@ -229,21 +213,18 @@
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
           <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
             <source src="static/videos/carousel1.mp4"
             type="video/mp4">
           </video>
         </div>
         <div class="item item-video2">
           <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
             <source src="static/videos/carousel2.mp4"
             type="video/mp4">
           </video>
         </div>
         <div class="item item-video3">
           <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
             <source src="static/videos/carousel3.mp4"
             type="video/mp4">
           </video>
@@ -252,11 +233,7 @@
     </div>
   </div>
 </section>
-<!-- End video carousel -->
-
-
-
-
+-->
 
 
 <!-- Paper poster -->
@@ -265,7 +242,7 @@
     <div class="container">
       <h2 class="title">Poster</h2>
 
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+      <iframe  src="static/pdfs/cvpr25_workshop_visrl.pdf" width="100%" height="550">
           </iframe>
         
       </div>
@@ -278,7 +255,12 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>@article{chen2025visrl,
+  title={Visrl: Intention-driven visual perception via reinforced reasoning},
+  author={Chen, Zhangquan and Luo, Xufang and Li, Dongsheng},
+  journal={arXiv preprint arXiv:2503.07523},
+  year={2025}
+}</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
@@ -291,9 +273,7 @@
         <div class="content">
 
           <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
+            We would like to express our gratitude for the code snippets provided in <a href="https://github.com/hiyouga/LLaMA-Factory" target="_blank">LLaMA-Factory</a>, <a href="https://github.com/deepcs233/Visual-CoT" target="_blank">Visual-CoT</a>, <a href="https://github.com/haotian-liu/LLaVA" target="_blank">LLaVA</a>. These resources have significantly contributed to the development of our project.
           </p>
 
         </div>
