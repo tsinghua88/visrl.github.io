@@ -2,39 +2,35 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Meta tags for social media banners, these should be filled in appropriately as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
   <meta name="description" content="DESCRIPTION META TAG">
   <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
   <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
   <meta property="og:url" content="URL OF THE WEBSITE"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <!-- Path to banner image, should be in the path listed below. Optimal dimensions are 1200X630-->
   <meta property="og:image" content="static/image/your_banner_image.png" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
 
-
   <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
   <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <!-- Path to banner image, should be in the path listed below. Optimal dimensions are 1200X600-->
   <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
   <meta name="twitter:card" content="summary_large_image">
   <!-- Keywords for your paper to be indexed by-->
   <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-  <title>Academic Project Page</title>
+  <title>VisRL</title>
   <link rel="icon" type="image/x-icon" href="static/images/Tsinghua_University_Logo.svg.ico">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -45,8 +41,6 @@
   <script src="static/js/index.js"></script>
 </head>
 <body>
-
-
   <section class="hero">
     <div class="hero-body">
       <div class="container is-max-desktop">
@@ -54,27 +48,24 @@
           <div class="column has-text-centered">
             <h1 class="title is-1 publication-title">VisRL: Intention-Driven Visual Perception via Reinforced Reasoning</h1>
             <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Zhangquan Chen</a>,</span>
+                <a href="https://github.com/zhangquanchen" target="_blank">Zhangquan Chen</a>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Xufang Luo</a><sup>*</sup>,</span>
+                  <a href="https://www.microsoft.com/en-us/research/people/xufluo/" target="_blank">Xufang Luo</a><sup>*</sup>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Dongsheng Li</a>
+                    <a href="https://scholar.google.com/citations?user=VNg5rA8AAAAJ&hl=zh-CN" target="_blank">Dongsheng Li</a>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Tsinghua University, Microsoft Research Asia<br>CVPR2025 Workshop Spotlight</span>
+                    <span class="author-block">Tsinghua University, Microsoft Research Asia<br>ICCV 2025</span>
                     <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Corresponding Author</small></span>
                   </div>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
-                         <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/2503.07523" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
+                        <a href="https://arxiv.org/pdf/2503.07523" target="_blank" class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
                         </span>
@@ -82,10 +73,8 @@
                       </a>
                     </span>
 
-                  <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/zhangquanchen/VisRL" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
+                    <a href="https://github.com/zhangquanchen/VisRL" target="_blank" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
@@ -101,15 +90,13 @@
   </div>
 </section>
 
-
 <!-- Teaser video-->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
         <!-- Your video here -->
-        <source src="static/videos/pre-visrl-video.mp4"
-        type="video/mp4">
+        <source src="static/videos/pre-visrl-video.mp4" type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
         Video Presentation of VisRL.
@@ -136,6 +123,70 @@
 </section>
 <!-- End paper abstract -->
 
+<!-- Data Generation -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Data Generation</h2>
+        <div class="content has-text-justified">
+          <p>
+            The data generation pipeline in VisRL is designed to create high-quality preference data without relying on external annotations or models. This self-evolution process begins with a warm-up stage using Supervised Fine-Tuning (SFT) on a small dataset with bounding box annotations. The SFT stage provides the model with the basic ability to generate bounding boxes in a specific format.
+          </p>
+          <p>
+            Following SFT, the model enters an iterative data generation and optimization phase. The process involves:
+          </p>
+          <ul>
+            <li><strong>Sample Generation:</strong> The model generates multiple bounding box predictions for each input question and image. A diversity controller ensures the generated bounding boxes cover a wide variety of potential focus regions. The model then crops the sub-images corresponding to these bounding boxes and uses them to generate final responses.</li>
+            <li><strong>Data Filtering:</strong> The generated data undergoes a filtering process to select questions with appropriate difficulty levels (w. self-judge). This ensures the dataset contains win/loss preference pairs that are suitable for the current model's capabilities.</li>
+          </ul>
+          <p>
+            This self-evolution approach allows VisRL to progressively improve the quality of its generated data, which in turn enhances the model's visual perception abilities. The entire process is designed to be annotation-free and to maximize the proportion of positive instances in the constructed preference dataset.
+          </p>
+          
+          <!-- 图片插入位置 -->
+          <div style="display: flex; align-items: center; margin: 20px 0; justify-content: center;">
+            <div style="text-align: center; margin-right: 20px;">
+              <img src="static/images/data.png" alt="Data Generation Pipeline Flowchart" style="max-width: 40%; height: auto;">
+              <p style="margin-top: 10px; font-style: italic; text-align: center;">
+                This flowchart illustrates the data generation process in VisRL, showing how sample generation, diversity control, and data filtering work together to create high-quality preference data without external annotations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Data Generation -->
+
+<!-- Reinforced Visual Reasoning -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Reinforced Visual Reasoning</h2>
+        <div class="content has-text-justified">
+          <p>
+            The reinforced visual reasoning process in VisRL is divided into two stages, leveraging Direct Preference Optimization (DPO) to optimize the entire visual reasoning process.
+          </p>
+          <p>
+            <strong>Stage 1: Bounding Box Optimization</strong><br>
+            In the first stage, the model focuses on optimizing the generated bounding boxes. Given an input question-image pair, the objective is to maximize the probability of the preferred bounding box and minimize that of the undesirable bounding box. This is achieved through a step-level DPO algorithm, which updates the policy model based on pairwise preference data.
+          </p>
+          <p>
+            <strong>Stage 2: Joint Optimization of Bounding Boxes and Responses</strong><br>
+            The second stage extends the optimization to include both the bounding boxes and the final responses. The model considers the cropped image from the optimized bounding box to make CoT (Chain-of-Thought) inferences. The objective is to jointly optimize the bounding boxes and responses, ensuring that the model learns to refine its visual reasoning process through reinforcement learning.
+          </p>
+          <p>
+            This two-stage approach enables VisRL to learn intention-driven visual perception by iteratively improving the model's ability to select relevant focus regions and generate accurate responses, guided solely by task rewards.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Reinforced Visual Reasoning -->
 
 <!-- Image carousel -->
 <section class="hero is-small">
@@ -179,114 +230,45 @@
     </div>
   </div>
 </div>
-</div>
 </section>
 <!-- End image carousel -->
-
-
-
-
-<!-- 
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
--->
-
-
-<!--
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
--->
-
 
 <!-- Paper poster -->
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/cvpr25_workshop_visrl.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
+      <iframe src="static/pdfs/iccv.pdf" width="100%" height="550"></iframe>
     </div>
   </section>
 <!--End paper poster -->
 
-
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>@article{chen2025visrl,
+<!-- BibTeX citation -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{chen2025visrl,
   title={Visrl: Intention-driven visual perception via reinforced reasoning},
   author={Chen, Zhangquan and Luo, Xufang and Li, Dongsheng},
   journal={arXiv preprint arXiv:2503.07523},
   year={2025}
 }</code></pre>
-    </div>
+  </div>
 </section>
-<!--End BibTex citation -->
+<!-- End BibTeX citation -->
 
-
-  <footer class="footer">
+<footer class="footer">
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
-
           <p>
             We would like to express our gratitude for the code snippets provided in <a href="https://github.com/hiyouga/LLaMA-Factory" target="_blank">LLaMA-Factory</a>, <a href="https://github.com/deepcs233/Visual-CoT" target="_blank">Visual-CoT</a>, <a href="https://github.com/haotian-liu/LLaVA" target="_blank">LLaVA</a>. These resources have significantly contributed to the development of our project.
           </p>
-
         </div>
       </div>
     </div>
   </div>
 </footer>
-
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-    <!-- End of Statcounter Code -->
-
-  </body>
-  </html>
+</body>
+</html>
